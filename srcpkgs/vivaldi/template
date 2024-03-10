@@ -2,7 +2,7 @@
 # Permission to redistribute is granted.
 # see: srcpkgs/vivaldi/files/redistribution-permission.eml
 pkgname=vivaldi
-version=6.5.3206.63
+version=6.6.3271.48
 revision=1
 _release=1
 archs="x86_64 aarch64 armv7l"
@@ -17,15 +17,15 @@ skiprdeps="/opt/vivaldi/libqt5_shim.so /opt/vivaldi/libqt6_shim.so"
 case "$XBPS_TARGET_MACHINE" in
 x86_64)
 	distfiles="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}-${_release}_amd64.deb"
-	checksum=45b1a838a43201a358fb2fa3093fabec623dbf29934fd90f0ebc25f7f6e168dc
+	checksum=ff306f1f4210649afc3ca5a42339cf47134b331428c553a70eb030fb40563843
 	;;
 aarch64)
 	distfiles="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}-${_release}_arm64.deb"
-	checksum=3322938a122609dd7fe14c270bf1aac9e41c62724dbca5b951f20844de39afc1
+	checksum=35e6323e0222a144520e89b066aec2734f3e03f5e740493ac8489a83b63140ed
 	;;
 armv7l)
 	distfiles="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}-${_release}_armhf.deb"
-	checksum=0637f4cd3c1d56c2e4162132f3039faa6c5f37d528f4939cc595302c9643df59
+	checksum=007ef1ff9d38817d2c267f02e7c2b06ebe37434e1022c02d3fa809d62832ea29
 	;;
 *)
 	broken="No distfiles available for this target"
